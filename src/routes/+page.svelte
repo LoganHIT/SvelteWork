@@ -7,55 +7,44 @@
     let navItems = [
         { text: "Home", href: "/" },
         { text: "About", href: "/about" },
-        { text: "My Cards", href: "/cards" },
         { text: "Contact", href: "/contact" },
+        { text: "Test", href: "/blog"},
     ];
 </script>
 
 <div class="container">
-    <div class="header">
-        <Header />
-    </div>
-    <div class="left-side">
-
-    </div>
+    <header><Header /></header>
+    <div class="left-side"><Sidebar {navItems} /></div>
     <main>
         <Card />
         <Card />
-    </main>
-    <div class="sidebar">
-        <Sidebar {navItems} />
-    </div>
-    <div class="footer">
-        <Footer />
-    </div>
+    </main>    
+    <footer><Footer /></footer>
 </div>
 
 <style>
-    main {
-        display: flex;
-        gap: 1em;
-    }
     .container {
         /* make this a holy grail layout */
         display: grid;
-        grid-template: auto 1fr auto / auto 1fr auto;
+        grid-template: auto 1fr auto / auto 1fr ;
     }
-    .header{
+    header{
         padding: 2rem;
         grid-column: 1 / 3;
-    }
-    .left-side{
-        grid-column: 1 / 3;
+        background-color: bisque;
     }
     main{
-        grid-column: 2 / 3;
-        justify-content: center;
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
     }
-    .sidebar{
-        grid-column: 3 / 3;
+    .left-side{
+        padding: 1em;
+        grid-column: 1 / 2;
+        background-color: aliceblue;
     }
-    .footer{
+    footer{
         grid-column: 1 / 3;
+        background-color: aquamarine;
     }
 </style>
