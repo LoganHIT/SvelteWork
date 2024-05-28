@@ -38,5 +38,9 @@
   footer {
     grid-column: 1 / 3;
     background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
   }
 </style>

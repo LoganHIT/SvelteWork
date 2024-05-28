@@ -1,5 +1,5 @@
 <script>
-    let username = "Jane Doe";
+    export let username;
 </script>
 
 <figure>

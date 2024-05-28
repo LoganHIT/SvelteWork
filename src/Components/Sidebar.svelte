@@ -11,10 +11,10 @@
 </nav>
 
 <style>
-    ul {
+    ul{
         padding-left: 0;
     }
-    li {
+    li{
         list-style: none;
     }
 </style>
