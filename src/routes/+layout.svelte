@@ -12,12 +12,12 @@
 </script>
 
 <div class="container">
-  <section>
+  <header>
     <Header />
     {#each navItems as item}
       <a href="{item.href}">{item.text} </a>
     {/each}
-  </section>
+  </header>
   <main>
     <slot />
   </main>
@@ -30,7 +30,7 @@
     display: grid;
     grid-template: auto 1fr auto / auto 1fr;
   }
-  section {
+  header {
     padding: 2rem;
     grid-column: 1 / 3;
     background-color: bisque;

@@ -1,3 +1,3 @@
 <footer>
-    &copy; Web 1 2024
+    <p>&copy; Web 1 2024</p>
 </footer>
