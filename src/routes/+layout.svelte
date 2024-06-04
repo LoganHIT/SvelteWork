@@ -12,7 +12,6 @@
 </script>
 
 <div class="container">
-  <p>CHANGE DIRECTORY</p>
   <header>
     <Header />
     {#each navItems as item}
